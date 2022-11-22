@@ -29,4 +29,37 @@ function prompt() {
             promptMessages.quit
         ]
     })
-    }
+
+    .then(answer => {
+        console.log('answer', answer);
+        switch (answer.action) {
+            case promptMessages.viewAllEmployees:
+                viewAllEmployees();
+                break;
+
+            case promptMessages.addEmployee:
+                addEmployee();
+                break;
+
+            case promptMessages.updateRole:
+                updateRole();
+                break;
+
+            case promptMessages.viewAllRoles:
+                viewAllRoles();
+                break;
+
+            case promptMessages.addRole:
+                addRole();
+                break;
+
+            case promptMessages.addDepartment:
+                addDepartment();
+                break;
+
+            case promptMessages.quit:
+                connnection.end();
+                break;
+        }
+    });
+}
