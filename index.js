@@ -8,7 +8,7 @@ const promptMessages = {
     updateRole: 'Update Employee Role',
     viewAllRoles: 'View All Roles',
     addRole: 'Add Role',
-    viewAllDepartment: 'View All Department',
+    viewAllDepartment: 'View All Departments',
     addDepartment: 'Add Department',
     quit: "Quit"
 };
